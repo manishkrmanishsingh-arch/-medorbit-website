@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>Admission Guide | MedOrbit Foundation</title>
+
+  <meta
+    name="description"
+    content="A simple admission guide for courses, colleges, entrance exams, counselling, documents, applications and study abroad support from MedOrbit Foundation."
+  >
+
+  <meta
+    name="keywords"
+    content="admission guide, college admission process, MBBS admission, study abroad admission, counselling guide, MedOrbit Foundation"
+  >
+
+  <meta name="author" content="MedOrbit Foundation">
+  <meta name="theme-color" content="#0756a3">
+
+  <link
+    rel="canonical"
+    href="https://medorbits.in/admission-guide.html"
+  >
+
+  <meta
+    property="og:title"
+    content="Admission Guide | MedOrbit Foundation"
+  >
+
+  <meta
+    property="og:description"
+    content="Understand the complete admission process in simple steps."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://medorbits.in/admission-guide.html"
+  >
+
+  <style>
+    :root {
+      --primary: #0756a3;
+      --primary-dark: #043d77;
+      --secondary: #0ea5a4;
+      --accent: #ffb703;
+      --success: #15803d;
+      --danger: #dc2626;
+      --dark: #172033;
+      --text: #475569;
+      --muted: #7b8796;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #dbe4ef;
+
+      --shadow:
+        0 14px 34px rgba(21, 47, 78, 0.12);
+
+      --shadow-large:
+        0 24px 60px rgba(21, 47, 78, 0.16);
+
+      --radius: 20px;
+      --radius-large: 28px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-white {
+      background: var(--white);
+    }
+
+    .section-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-heading span {
+      display: inline-block;
+      margin-bottom: 9px;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 13px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      color: var(--text);
+    }
+
+    .section-dark .section-heading span {
+      color: var(--accent);
+    }
+
+    .section-dark .section-heading p {
+      color: #b8c3d1;
+    }
+
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 800;
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-light {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.65);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .topbar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary)
+        );
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 900;
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .logo-copy {
+      display: grid;
+      line-height: 1.05;
+    }
+
+    .logo-name {
+      color: var(--primary);
+      font-size: 1.55rem;
+      font-weight: 900;
+    }
+
+    .logo-name strong {
+      color: var(--dark);
+    }
+
+    .logo-copy small {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.59rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--dark);
+      font-size: 0.93rem;
+      font-weight: 750;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 12px;
+      background: #eaf3fc;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    .announcement {
+      padding: 11px 0;
+      background: #fff4cc;
+      color: #614c00;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4, 61, 119, 0.96),
+          rgba(7, 86, 163, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+      color: var(--white);
+    }
+
+    .hero-grid {
+      min-height: 560px;
+      padding: 76px 0;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(2.5rem, 5.6vw, 4.8rem);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-copy p {
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 27px;
+    }
+
+    .hero-panel {
+      padding: 27px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-large);
+      background: rgba(255, 255, 255, 0.13);
+      backdrop-filter: blur(13px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .hero-panel h2 {
+      margin-bottom: 8px;
+      font-size: 1.5rem;
+    }
+
+    .hero-panel > p {
+      margin-bottom: 18px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .hero-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.11);
+    }
+
+    .hero-item-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-item small {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .quick-card {
+      display: grid;
+      place-items: center;
+      min-height: 135px;
+      padding: 18px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease;
+    }
+
+    .quick-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .quick-card span {
+      font-size: 2rem;
+    }
+
+    .quick-card strong {
+      margin-top: 8px;
+      font-size: 0.94rem;
+    }
+
+    .guide-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .guide-tab {
+      min-height: 42px;
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .guide-tab:hover,
+    .guide-tab.active {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .guide-panel {
+      display: none;
+    }
+
+    .guide-panel.active {
+      display: block;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .process-card {
+      position: relative;
+      padding: 23px 18px;
+      text-align: center;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .process-number {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 13px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .process-card h3 {
+      margin-bottom: 7px;
+      font-size: 1rem;
+    }
+
+    .process-card p {
+      color: var(--text);
+      font-size: 0.88rem;
+    }
+
+    .document-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .document-card {
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .document-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 14px;
+      font-size: 1.15rem;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 25px;
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 900;
+    }
+
+    .warning-list li::before {
+      content: "!";
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #fee2e2;
+      color: var(--danger);
+      font-size: 0.72rem;
+    }
+
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .timeline-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1.3rem;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 6px;
+    }
+
+    .timeline-content p {
+      color: var(--text);
+    }
+
+    .mistake-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .mistake-card {
+      padding: 23px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .mistake-card span {
+      font-size: 1.8rem;
+    }
+
+    .mistake-card h3 {
+      margin: 12px 0 7px;
+      color: var(--white);
+    }
+
+    .mistake-card p {
+      color: #b8c3d1;
+      font-size: 0.9rem;
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--white);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      border: 0;
+      background: transparent;
+      color: var(--dark);
+      text-align: left;
+      font-weight: 800;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 20px 19px;
+      color: var(--text);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      color: var(--primary);
+      font-size: 1.25rem;
+    }
+
+    .enquiry-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .enquiry-copy h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .enquiry-copy p {
+      color: #bec9d8;
+    }
+
+    .enquiry-form {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-large);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field label {
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 11px;
+      outline: none;
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    .field textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .enquiry-form .btn {
+      width: 100%;
+    }
+
+    .disclaimer {
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: #fff8dd;
+      color: #664f00;
+      font-size: 0.92rem;
+    }
+
+    .footer {
+      padding: 62px 0 22px;
+      background: #101827;
+      color: #dbe4ef;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer h3 {
+      margin-bottom: 15px;
+      color: var(--white);
+    }
+
+    .footer p,
+    .footer a {
+      color: #aeb9c8;
+      font-size: 0.94rem;
+    }
+
+    .footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      margin-top: 35px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: #9da9b7;
+      font-size: 0.88rem;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 900;
+      display: grid;
+      gap: 11px;
+    }
+
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 1.25rem;
+      box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    .call {
+      background: var(--primary);
+    }
+
+    @media (max-width: 1050px) {
+      .nav-links {
+        position: fixed;
+        top: 78px;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 78px);
+        overflow-y: auto;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 4%;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero-grid,
+      .enquiry-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .document-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .mistake-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(94%, 1180px);
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-group {
+        justify-content: center;
+      }
+
+      .topbar-group span:first-child {
+        display: none;
+      }
+
+      .logo-copy small {
+        display: none;
+      }
+
+      .hero-grid {
+        min-height: auto;
+        padding: 58px 0;
+        gap: 30px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.3rem, 12vw, 3.5rem);
+      }
+
+      .hero-actions {
+        display: grid;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .quick-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 12px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+      }
+
+      .quick-card {
+        min-width: 150px;
+        scroll-snap-align: start;
+      }
+
+      .guide-tabs {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+
+      .guide-tab {
+        flex: 0 0 auto;
+      }
+
+      .process-grid,
+      .document-grid,
+      .mistake-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 48px 1fr;
+        gap: 12px;
+      }
+
+      .timeline-icon {
+        width: 46px;
+        height: 46px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .logo-name {
+        font-size: 1.34rem;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero-panel,
+      .document-card,
+      .enquiry-form {
+        padding: 20px;
+      }
+
+      .topbar-group {
+        flex-direction: column;
+        gap: 1px;
+        padding: 5px 0;
+      }
+
+      .floating-buttons {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .float-btn {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-group">
+        <span>Education • Careers • Jobs • Training</span>
+        <span>📞 +91 9142102309</span>
+      </div>
+
+      <a href="https://medorbits.in">
+        🌐 medorbits.in
+      </a>
+
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+
+        <span class="logo-icon">M</span>
+
+        <span class="logo-copy">
+
+          <span class="logo-name">
+            Med<strong>Orbit</strong>
+          </span>
+
+          <small>Foundation</small>
+
+        </span>
+
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="brochure.html">Brochures</a></li>
+
+        <li><a href="courses.html">Courses</a></li>
+
+        <li><a href="colleges.html">Colleges</a></li>
+
+        <li>
+          <a
+            href="admission-guide.html"
+            class="active"
+          >
+            Admission Guide
+          </a>
+        </li>
+
+        <li><a href="jobs.html">Jobs</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+      <a
+        class="btn btn-primary nav-cta"
+        href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20admission%20guidance."
+      >
+        Get Guidance
+      </a>
+
+    </div>
+  </header>
+
+  <div class="announcement">
+    📘 Understand the admission process in simple steps.
+  </div>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="hero-badge">
+            🎓 Simple Admission Guide
+          </span>
+
+          <h1>
+            Your Admission Journey,
+            <span>Made Easier</span>
+          </h1>
+
+          <p>
+            Follow a clear process for course selection, college
+            shortlisting, entrance exams, counselling, documents,
+            applications and joining.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="btn btn-light"
+              href="#guide"
+            >
+              Start the Guide
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20please%20guide%20me%20through%20the%20admission%20process."
+            >
+              Ask a Counsellor
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-panel">
+
+          <h2>
+            What This Guide Covers
+          </h2>
+
+          <p>
+            Everything important, without unnecessary complexity.
+          </p>
+
+          <div class="hero-list">
+
+            <div class="hero-item">
+              <span class="hero-item-icon">🎯</span>
+
+              <div>
+                <strong>Course Selection</strong>
+                <br>
+                <small>Choose a suitable academic pathway.</small>
+              </div>
+            </div>
+
+            <div class="hero-item">
+              <span class="hero-item-icon">🏫</span>
+
+              <div>
+                <strong>College Shortlisting</strong>
+                <br>
+                <small>Compare institutions and admission routes.</small>
+              </div>
+            </div>
+
+            <div class="hero-item">
+              <span class="hero-item-icon">📄</span>
+
+              <div>
+                <strong>Documents</strong>
+                <br>
+                <small>Prepare the required certificates correctly.</small>
+              </div>
+            </div>
+
+            <div class="hero-item">
+              <span class="hero-item-icon">✅</span>
+
+              <div>
+                <strong>Final Admission</strong>
+                <br>
+                <small>Complete verification, payment and joining.</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Quick Access
+          </span>
+
+          <h2>
+            Select Your Admission Path
+          </h2>
+
+        </div>
+
+        <div class="quick-grid">
+
+          <a
+            class="quick-card guide-shortcut"
+            href="#guide"
+            data-guide="india"
+          >
+            <span>🇮🇳</span>
+            <strong>Study in India</strong>
+          </a>
+
+          <a
+            class="quick-card guide-shortcut"
+            href="#guide"
+            data-guide="abroad"
+          >
+            <span>🌍</span>
+            <strong>Study Abroad</strong>
+          </a>
+
+          <a
+            class="quick-card"
+            href="#documents"
+          >
+            <span>📄</span>
+            <strong>Documents</strong>
+          </a>
+
+          <a
+            class="quick-card"
+            href="#timeline"
+          >
+            <span>🗓️</span>
+            <strong>Admission Timeline</strong>
+          </a>
+
+          <a
+            class="quick-card"
+            href="#faq"
+          >
+            <span>❓</span>
+            <strong>FAQs</strong>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      class="section"
+      id="guide"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Step-by-Step Guide
+          </span>
+
+          <h2>
+            Follow the Correct Admission Process
+          </h2>
+
+          <p>
+            Select the pathway that matches your requirement.
+          </p>
+
+        </div>
+
+        <div class="guide-tabs">
+
+          <button
+            class="guide-tab active"
+            data-target="indiaGuide"
+          >
+            Study in India
+          </button>
+
+          <button
+            class="guide-tab"
+            data-target="abroadGuide"
+          >
+            Study Abroad
+          </button>
+
+          <button
+            class="guide-tab"
+            data-target="jobGuide"
+          >
+            Training & Careers
+          </button>
+
+        </div>
+
+        <div
+          class="guide-panel active"
+          id="indiaGuide"
+        >
+
+          <div class="process-grid">
+
+            <article class="process-card">
+              <div class="process-number">1</div>
+              <h3>Choose Course</h3>
+              <p>
+                Select a course based on subjects, interest and career
+                goal.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">2</div>
+              <h3>Check Eligibility</h3>
+              <p>
+                Review marks, subjects, age and entrance requirements.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">3</div>
+              <h3>Appear for Exam</h3>
+              <p>
+                Complete the required entrance examination, if applicable.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">4</div>
+              <h3>Register</h3>
+              <p>
+                Complete official counselling or institutional
+                registration.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">5</div>
+              <h3>Choice Filling</h3>
+              <p>
+                Select colleges in a carefully planned preference order.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">6</div>
+              <h3>Join College</h3>
+              <p>
+                Verify documents, pay official fees and report on time.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div
+          class="guide-panel"
+          id="abroadGuide"
+        >
+
+          <div class="process-grid">
+
+            <article class="process-card">
+              <div class="process-number">1</div>
+              <h3>Select Country</h3>
+              <p>
+                Compare education quality, cost, language and environment.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">2</div>
+              <h3>Verify University</h3>
+              <p>
+                Check recognition, course structure and official details.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">3</div>
+              <h3>Apply</h3>
+              <p>
+                Submit academic documents through the official process.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">4</div>
+              <h3>Receive Offer</h3>
+              <p>
+                Review the admission or offer letter carefully.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">5</div>
+              <h3>Visa Process</h3>
+              <p>
+                Prepare visa documents, funds and travel requirements.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">6</div>
+              <h3>Travel & Join</h3>
+              <p>
+                Complete pre-departure preparation and university
+                reporting.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div
+          class="guide-panel"
+          id="jobGuide"
+        >
+
+          <div class="process-grid">
+
+            <article class="process-card">
+              <div class="process-number">1</div>
+              <h3>Identify Goal</h3>
+              <p>
+                Choose a training, skill or career pathway.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">2</div>
+              <h3>Check Requirements</h3>
+              <p>
+                Review qualification, duration and entry conditions.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">3</div>
+              <h3>Register</h3>
+              <p>
+                Complete the program or counselling registration.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">4</div>
+              <h3>Attend Training</h3>
+              <p>
+                Complete the required learning and practical activities.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">5</div>
+              <h3>Build Profile</h3>
+              <p>
+                Improve your resume, portfolio and interview readiness.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <div class="process-number">6</div>
+              <h3>Apply</h3>
+              <p>
+                Apply to suitable internships, jobs or further programs.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      class="section section-white"
+      id="documents"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Document Checklist
+          </span>
+
+          <h2>
+            Keep These Documents Ready
+          </h2>
+
+          <p>
+            Exact requirements depend on the course and institution.
+          </p>
+
+        </div>
+
+        <div class="document-grid">
+
+          <article class="document-card">
+
+            <h3>
+              📚 Academic Documents
+            </h3>
+
+            <ul class="check-list">
+              <li>Class 10 marksheet and certificate</li>
+              <li>Class 12 marksheet and certificate</li>
+              <li>Graduation documents, if applicable</li>
+              <li>Entrance examination scorecard</li>
+              <li>Transfer or migration certificate</li>
+            </ul>
+
+          </article>
+
+          <article class="document-card">
+
+            <h3>
+              🪪 Identity Documents
+            </h3>
+
+            <ul class="check-list">
+              <li>Aadhaar card or accepted ID</li>
+              <li>Passport-size photographs</li>
+              <li>Birth certificate, where required</li>
+              <li>Passport for overseas admission</li>
+              <li>Parent or guardian ID documents</li>
+            </ul>
+
+          </article>
+
+          <article class="document-card">
+
+            <h3>
+              📑 Category & Other Documents
+            </h3>
+
+            <ul class="check-list">
+              <li>Category certificate, if applicable</li>
+              <li>Income or EWS certificate</li>
+              <li>Domicile or residence certificate</li>
+              <li>Medical fitness certificate</li>
+              <li>Gap affidavit, where required</li>
+            </ul>
+
+          </article>
+
+          <article class="document-card">
+
+            <h3>
+              🌍 Overseas Documents
+            </h3>
+
+            <ul class="check-list">
+              <li>Valid passport</li>
+              <li>University offer or admission letter</li>
+              <li>Visa application documents</li>
+              <li>Financial proof</li>
+              <li>Attestation or apostille, if required</li>
+            </ul>
+
+          </article>
+
+          <article class="document-card">
+
+            <h3>
+              ✅ Before Submission
+            </h3>
+
+            <ul class="check-list">
+              <li>Check spelling of name and date of birth</li>
+              <li>Keep clear scanned copies</li>
+              <li>Use the required file format and size</li>
+              <li>Keep original documents safely</li>
+              <li>Save application and payment receipts</li>
+            </ul>
+
+          </article>
+
+          <article class="document-card">
+
+            <h3>
+              ⚠️ Avoid These Errors
+            </h3>
+
+            <ul class="check-list warning-list">
+              <li>Uploading unclear documents</li>
+              <li>Missing deadlines</li>
+              <li>Using incorrect category details</li>
+              <li>Paying through unofficial channels</li>
+              <li>Ignoring official instructions</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      class="section"
+      id="timeline"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Planning Timeline
+          </span>
+
+          <h2>
+            Organise Your Admission Journey
+          </h2>
+
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+
+            <div class="timeline-icon">
+              1
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Research and Preparation
+              </h3>
+
+              <p>
+                Explore courses, careers, entrance exams, colleges and
+                eligibility requirements.
+              </p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <div class="timeline-icon">
+              2
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Applications and Examinations
+              </h3>
+
+              <p>
+                Complete registrations and attend required entrance
+                examinations.
+              </p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <div class="timeline-icon">
+              3
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Counselling and Shortlisting
+              </h3>
+
+              <p>
+                Register for official counselling and prepare a sensible
+                college preference list.
+              </p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <div class="timeline-icon">
+              4
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Allotment and Verification
+              </h3>
+
+              <p>
+                Review allotment results and complete document
+                verification within the deadline.
+              </p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <div class="timeline-icon">
+              5
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Fee Payment and Reporting
+              </h3>
+
+              <p>
+                Pay only through the official method and report to the
+                institution as instructed.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Important Advice
+          </span>
+
+          <h2>
+            Common Admission Mistakes to Avoid
+          </h2>
+
+        </div>
+
+        <div class="mistake-grid">
+
+          <article class="mistake-card">
+            <span>⏰</span>
+            <h3>Missing Deadlines</h3>
+            <p>
+              Save important dates and check official portals regularly.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>💳</span>
+            <h3>Unofficial Payments</h3>
+            <p>
+              Pay only through the authorised institution or counselling
+              portal.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>🏫</span>
+            <h3>Unverified Institutions</h3>
+            <p>
+              Check recognition and course approval before applying.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>📄</span>
+            <h3>Document Errors</h3>
+            <p>
+              Check names, dates, categories and certificate validity.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>📋</span>
+            <h3>Poor Choice Filling</h3>
+            <p>
+              Arrange college preferences carefully before locking them.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>💰</span>
+            <h3>Ignoring Total Cost</h3>
+            <p>
+              Consider tuition, hostel, travel and additional expenses.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>🗣️</span>
+            <h3>Depending on Rumours</h3>
+            <p>
+              Use official notices instead of unverified social media
+              messages.
+            </p>
+          </article>
+
+          <article class="mistake-card">
+            <span>🔐</span>
+            <h3>Sharing Login Details</h3>
+            <p>
+              Protect passwords, OTPs and application credentials.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      class="section section-white"
+      id="faq"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Frequently Asked Questions
+          </span>
+
+          <h2>
+            Admission Questions Answered
+          </h2>
+
+        </div>
+
+        <div class="faq-list">
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+              How should I choose the right course?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+              Consider your subjects, interests, academic performance,
+              preferred career, course duration and budget before making
+              a decision.
+            </div>
+
+          </article>
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+              Is an entrance exam required for every course?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+              No. Some courses use entrance examinations, while others
+              may admit students through merit or institutional criteria.
+            </div>
+
+          </article>
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+              Can MedOrbit guarantee admission?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+              No. Admission depends on eligibility, official rules,
+              available seats, documents, examination results and the
+              relevant institution or counselling authority.
+            </div>
+
+          </article>
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+              How do I verify a college or university?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+              Check the official institution website and the relevant
+              regulatory, counselling or government authority.
+            </div>
+
+          </article>
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+              When should I start preparing for admission?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+              Start researching early so you have enough time for entrance
+              exams, documents, applications and counselling.
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container enquiry-grid">
+
+        <div class="enquiry-copy">
+
+          <h2>
+            Need Personal Admission Guidance?
+          </h2>
+
+          <p>
+            Share your qualification, course preference, marks, location
+            and budget with MedOrbit Foundation.
+          </p>
+
+        </div>
+
+        <form
+          class="enquiry-form"
+          id="admissionForm"
+        >
+
+          <div class="form-grid">
+
+            <div class="field">
+
+              <label for="name">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="phone">
+                Mobile Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter mobile number"
+                inputmode="numeric"
+                required
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="course">
+                Preferred Course
+              </label>
+
+              <input
+                type="text"
+                id="course"
+                placeholder="Example: MBBS, Nursing, B.Tech, MBA"
+                required
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="destination">
+                Study Preference
+              </label>
+
+              <select
+                id="destination"
+                required
+              >
+
+                <option value="">
+                  Select preference
+                </option>
+
+                <option>
+                  India
+                </option>
+
+                <option>
+                  Study Abroad
+                </option>
+
+                <option>
+                  Not Decided
+                </option>
+
+              </select>
+
+            </div>
+
+            <div class="field">
+
+              <label for="message">
+                Additional Details
+              </label>
+
+              <textarea
+                id="message"
+                placeholder="Mention marks, exam score, preferred state or budget"
+              ></textarea>
+
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-light"
+            >
+              Send Enquiry on WhatsApp
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="disclaimer">
+
+          <strong>Important:</strong>
+
+          Admission rules, entrance examinations, counselling schedules,
+          eligibility, fees, seat availability, visa requirements and
+          documentation can change. Verify all information through the
+          relevant official institution, counselling authority,
+          regulatory body, government portal or embassy before applying
+          or making payment.
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>
+            MedOrbit Foundation
+          </h3>
+
+          <p>
+            Education, admission, career, job, training and study abroad
+            guidance.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Admission
+          </h3>
+
+          <div class="footer-links">
+            <a href="courses.html">Courses</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="fee-structure.html">Fee Structure</a>
+            <a href="study-abroad.html">Study Abroad</a>
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Resources
+          </h3>
+
+          <div class="footer-links">
+            <a href="brochure.html">Brochures</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="career-counselling.html">Career Counselling</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="tel:+919142102309">
+              +91 9142102309
+            </a>
+
+            <a href="https://wa.me/919142102309">
+              WhatsApp Support
+            </a>
+
+            <a href="https://medorbits.in">
+              medorbits.in
+            </a>
+
+            <p>
+              Wave Silver Tower, 7th Floor, Sector 18, Noida,
+              Uttar Pradesh, India
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> MedOrbit Foundation.
+          All rights reserved.
+        </span>
+
+        <span>
+          Verify admission details through official sources.
+        </span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+
+    <a
+      class="float-btn whatsapp"
+      href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20admission%20guidance."
+      aria-label="Chat on WhatsApp"
+    >
+      💬
+    </a>
+
+    <a
+      class="float-btn call"
+      href="tel:+919142102309"
+      aria-label="Call MedOrbit Foundation"
+    >
+      ☎
+    </a>
+
+  </div>
+
+  <script>
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
+
+      if (navLinks.classList.contains("active")) {
+        menuToggle.textContent = "✕";
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Close navigation menu"
+        );
+      } else {
+        menuToggle.textContent = "☰";
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
+      }
+    });
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("active");
+          document.body.classList.remove("menu-open");
+          menuToggle.textContent = "☰";
+        });
+      });
+
+    const guideTabs =
+      document.querySelectorAll(".guide-tab");
+
+    const guidePanels =
+      document.querySelectorAll(".guide-panel");
+
+    function openGuide(targetId) {
+      guideTabs.forEach(function (tab) {
+        tab.classList.remove("active");
+      });
+
+      guidePanels.forEach(function (panel) {
+        panel.classList.remove("active");
+      });
+
+      const selectedTab =
+        document.querySelector(
+          '.guide-tab[data-target="' +
+          targetId +
+          '"]'
+        );
+
+      const selectedPanel =
+        document.getElementById(targetId);
+
+      if (selectedTab && selectedPanel) {
+        selectedTab.classList.add("active");
+        selectedPanel.classList.add("active");
+      }
+    }
+
+    guideTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        openGuide(
+          tab.getAttribute("data-target")
+        );
+      });
+    });
+
+    document
+      .querySelectorAll(".guide-shortcut")
+      .forEach(function (shortcut) {
+        shortcut.addEventListener(
+          "click",
+          function () {
+            const guideType =
+              shortcut.getAttribute("data-guide");
+
+            if (guideType === "india") {
+              openGuide("indiaGuide");
+            }
+
+            if (guideType === "abroad") {
+              openGuide("abroadGuide");
+            }
+          }
+        );
+      });
+
+    document
+      .querySelectorAll(".faq-question")
+      .forEach(function (button) {
+        button.addEventListener("click", function () {
+          const item =
+            button.parentElement;
+
+          const icon =
+            button.querySelector(".faq-icon");
+
+          item.classList.toggle("active");
+
+          icon.textContent =
+            item.classList.contains("active")
+              ? "−"
+              : "+";
+        });
+      });
+
+    const admissionForm =
+      document.getElementById("admissionForm");
+
+    admissionForm.addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const course =
+          document.getElementById("course").value.trim();
+
+        const destination =
+          document.getElementById("destination").value;
+
+        const message =
+          document.getElementById("message").value.trim();
+
+        const whatsappMessage =
+          "Hello MedOrbit Foundation,%0A%0A" +
+          "I need admission guidance.%0A%0A" +
+          "Name: " +
+          encodeURIComponent(name) +
+          "%0A" +
+          "Mobile: " +
+          encodeURIComponent(phone) +
+          "%0A" +
+          "Preferred Course: " +
+          encodeURIComponent(course) +
+          "%0A" +
+          "Study Preference: " +
+          encodeURIComponent(destination) +
+          "%0A" +
+          "Details: " +
+          encodeURIComponent(
+            message || "Not provided"
+          );
+
+        const whatsappURL =
+          "https://wa.me/919142102309?text=" +
+          whatsappMessage;
+
+        window.open(
+          whatsappURL,
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+    );
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
