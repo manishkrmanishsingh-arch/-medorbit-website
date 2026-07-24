@@ -1,0 +1,151 @@
+{
+  "id": "/",
+  "name": "MedOrbit Foundation",
+  "short_name": "MedOrbit",
+  "description": "MedOrbit Foundation is a trusted education, career, admission, and job consultancy platform offering guidance for MBBS, Medical, Engineering, Management, Study Abroad, Government & Private Jobs, Scholarships, Training, and Career Counselling.",
+
+  "start_url": "/index.html",
+  "scope": "/",
+
+  "display": "standalone",
+  "orientation": "portrait-primary",
+
+  "background_color": "#f5f8fc",
+  "theme_color": "#0756a3",
+
+  "lang": "en-IN",
+  "dir": "ltr",
+
+  "categories": [
+    "education",
+    "business",
+    "medical",
+    "career",
+    "consultancy"
+  ],
+
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+
+  "icons": [
+    {
+      "src": "assets/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Home"
+    },
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1366x768",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop Home"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "MBBS Admissions",
+      "short_name": "MBBS",
+      "url": "/courses/mbbs.html",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Study Abroad",
+      "short_name": "Abroad",
+      "url": "/study-abroad.html",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Jobs",
+      "short_name": "Jobs",
+      "url": "/jobs.html",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+
+  "related_applications": false,
+
+  "prefer_related_applications": false
+}
