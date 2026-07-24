@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>About MedOrbit | Medical Admission Guidance</title>
+
+  <meta
+    name="description"
+    content="Learn about MedOrbit, our mission, vision, values and student-first approach to MBBS admission guidance in India and abroad."
+  >
+
+  <meta
+    name="keywords"
+    content="About MedOrbit, MBBS admission consultancy, medical admission guidance, NEET counselling, MBBS abroad counselling"
+  >
+
+  <meta name="author" content="MedOrbit">
+  <meta name="theme-color" content="#0756a3">
+
+  <link rel="canonical" href="https://medorbits.in/about.html">
+
+  <meta property="og:title" content="About MedOrbit | Medical Admission Guidance">
+
+  <meta
+    property="og:description"
+    content="Discover MedOrbit's mission, vision, values and commitment to transparent medical admission guidance."
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medorbits.in/about.html">
+
+  <style>
+    :root {
+      --primary: #0756a3;
+      --primary-dark: #043d77;
+      --secondary: #10a6a1;
+      --accent: #ffb703;
+      --success: #138a4b;
+      --dark: #172033;
+      --text: #445063;
+      --muted: #7b8796;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #dbe4ef;
+      --shadow: 0 14px 36px rgba(21, 47, 78, 0.12);
+      --shadow-lg: 0 24px 60px rgba(21, 47, 78, 0.16);
+      --radius: 20px;
+      --radius-lg: 28px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-heading span {
+      display: inline-block;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.18;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: 12px;
+      font-weight: 800;
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 10px 24px rgba(7, 86, 163, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-light {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .topbar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.65rem;
+      font-weight: 900;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      font-size: 1.35rem;
+      box-shadow: 0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .logo-copy {
+      display: grid;
+      line-height: 1.05;
+    }
+
+    .logo-copy strong {
+      color: var(--dark);
+    }
+
+    .logo-copy small {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.63rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--dark);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 12px;
+      background: #edf4fb;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    .notice {
+      background: #fff4cc;
+      color: #614c00;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        position: fixed;
+        top: 78px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 4%;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(94%, 1180px);
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .topbar-links {
+        justify-content: center;
+      }
+
+      .topbar-links span:last-child {
+        display: none;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .logo-copy small {
+        display: none;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .logo {
+        font-size: 1.42rem;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .topbar-links {
+        flex-direction: column;
+        gap: 0;
+        padding: 6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-links">
+        <span>Professional Medical Admission Guidance</span>
+        <span>📞 +91 9142102309</span>
+      </div>
+
+      <div>
+        <a href="https://medorbits.in">
+          🌐 medorbits.in
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">M</span>
+
+        <span class="logo-copy">
+          <span>Med<strong>Orbit</strong></span>
+          <small>Medical Admission Guidance</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="active">About</a>
+        </li>
+
+        <li>
+          <a href="index.html#services">Services</a>
+        </li>
+
+        <li>
+          <a href="index.html#destinations">Countries</a>
+        </li>
+
+        <li>
+          <a href="brochure.html">Brochure</a>
+        </li>
+
+        <li>
+          <a href="fee-structure.html">Fees</a>
+        </li>
+
+        <li>
+          <a href="admission_Guide.html">Admission Guide</a>
+        </li>
+
+        <li>
+          <a href="index.html#faq">FAQ</a>
+        </li>
+      </ul>
+
+      <a
+        class="btn btn-primary nav-cta"
+        href="https://wa.me/919142102309?text=Hello%20MedOrbit%2C%20I%20need%20admission%20counselling."
+      >
+        Free Counselling
+      </a>
+
+    </div>
+  </header>
+
+  <div class="notice">
+    🎓 Transparent and student-first guidance for medical admissions.
+  </div>
+
+  <main>
