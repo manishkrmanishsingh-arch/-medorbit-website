@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>404 – Page Not Found | MedOrbit Foundation</title>
+
+  <meta
+    name="description"
+    content="The requested page could not be found. Browse MedOrbit Foundation courses, colleges, jobs, admission guidance and support services."
+  >
+
+  <meta name="robots" content="noindex, follow">
+  <meta name="author" content="MedOrbit Foundation">
+  <meta name="theme-color" content="#0756a3">
+
+  <style>
+    :root {
+      --primary: #0756a3;
+      --primary-dark: #043d77;
+      --secondary: #0ea5a4;
+      --accent: #ffb703;
+      --success: #15803d;
+      --danger: #dc2626;
+      --dark: #172033;
+      --text: #475569;
+      --muted: #7b8796;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #dbe4ef;
+
+      --shadow:
+        0 14px 34px rgba(21, 47, 78, 0.12);
+
+      --shadow-large:
+        0 26px 70px rgba(21, 47, 78, 0.2);
+
+      --radius: 20px;
+      --radius-large: 30px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .topbar-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .header {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary)
+        );
+      font-size: 1.2rem;
+      font-weight: 900;
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .logo-copy {
+      display: grid;
+      line-height: 1.05;
+    }
+
+    .logo-name {
+      color: var(--primary);
+      font-size: 1.55rem;
+      font-weight: 900;
+    }
+
+    .logo-name strong {
+      color: var(--dark);
+    }
+
+    .logo-copy small {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.59rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 800;
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--white);
+      background: var(--primary);
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      background: var(--secondary);
+    }
+
+    .btn-light {
+      color: var(--primary);
+      background: var(--white);
+    }
+
+    .btn-outline {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: transparent;
+    }
+
+    .error-section {
+      position: relative;
+      min-height: calc(100vh - 120px);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary) 58%,
+          var(--secondary)
+        );
+      color: var(--white);
+    }
+
+    .error-section::before {
+      content: "";
+      position: absolute;
+      top: -180px;
+      right: -130px;
+      width: 460px;
+      height: 460px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .error-section::after {
+      content: "";
+      position: absolute;
+      left: -180px;
+      bottom: -230px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .error-grid {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 72px 0;
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .error-visual {
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .orbit-box {
+      position: relative;
+      width: min(360px, 90vw);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+    }
+
+    .orbit-ring {
+      position: absolute;
+      inset: 8%;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      animation: rotateOrbit 12s linear infinite;
+    }
+
+    .orbit-ring::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -9px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 22px rgba(255, 183, 3, 0.7);
+    }
+
+    .orbit-ring.two {
+      inset: 20%;
+      animation-direction: reverse;
+      animation-duration: 9s;
+    }
+
+    .orbit-ring.two::before {
+      top: auto;
+      right: -8px;
+      bottom: 24%;
+      left: auto;
+      width: 15px;
+      height: 15px;
+      background: var(--white);
+    }
+
+    .error-number {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(6rem, 18vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.08em;
+      text-shadow:
+        0 16px 42px rgba(0, 0, 0, 0.2);
+    }
+
+    .error-number span {
+      color: var(--accent);
+    }
+
+    .visual-label {
+      margin-top: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @keyframes rotateOrbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .error-copy {
+      max-width: 680px;
+    }
+
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.11);
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .error-copy h1 {
+      margin-bottom: 17px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .error-copy > p {
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(1rem, 2vw, 1.13rem);
+    }
+
+    .requested-path {
+      margin-top: 17px;
+      padding: 12px 14px;
+      overflow-wrap: anywhere;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.09);
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.88rem;
+    }
+
+    .requested-path strong {
+      color: var(--white);
+    }
+
+    .search-box {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      padding: 8px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .search-box input {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 0;
+      border-radius: 11px;
+      outline: none;
+      color: var(--dark);
+      background: var(--white);
+    }
+
+    .primary-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .support-note {
+      margin-top: 16px;
+      color: rgba(255, 255, 255, 0.77);
+      font-size: 0.88rem;
+    }
+
+    .links-section {
+      padding: 70px 0;
+      background: var(--white);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading span {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      color: var(--text);
+    }
+
+    .quick-links-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .quick-link {
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 23px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(
+          145deg,
+          var(--white),
+          #f2f7fc
+        );
+      box-shadow: var(--shadow);
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .quick-link:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .quick-link-icon {
+      font-size: 2rem;
+    }
+
+    .quick-link h3 {
+      margin: 11px 0 7px;
+      font-size: 1.12rem;
+    }
+
+    .quick-link p {
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .quick-link strong {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    .help-section {
+      padding: 66px 0;
+      background: var(--light);
+    }
+
+    .help-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-large);
+      background: var(--white);
+      box-shadow: var(--shadow-large);
+    }
+
+    .help-copy h2 {
+      margin-bottom: 8px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.15;
+    }
+
+    .help-copy p {
+      color: var(--text);
+    }
+
+    .help-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .status-box {
+      margin-top: 25px;
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 15px;
+      border-radius: 14px;
+      background: #eef8f3;
+      color: #14532d;
+      font-size: 0.91rem;
+    }
+
+    .status-icon {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--success);
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+
+    .footer {
+      padding: 50px 0 22px;
+      color: #dbe4ef;
+      background: #101827;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer h3 {
+      margin-bottom: 13px;
+      color: var(--white);
+    }
+
+    .footer p,
+    .footer a {
+      color: #aeb9c8;
+      font-size: 0.93rem;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+      color: #9da9b7;
+      font-size: 0.86rem;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 100;
+      display: grid;
+      gap: 11px;
+    }
+
+    .float-button {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 1.2rem;
+      box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    .call {
+      background: var(--primary);
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 25px;
+      z-index: 200;
+      width: min(420px, 90%);
+      padding: 14px 18px;
+      border-radius: 12px;
+      color: var(--white);
+      background: var(--dark);
+      box-shadow: var(--shadow-large);
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, 20px);
+      transition: 0.25s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 1000px) {
+      .error-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .error-copy {
+        margin: auto;
+      }
+
+      .error-copy > p {
+        margin-inline: auto;
+      }
+
+      .primary-actions {
+        justify-content: center;
+      }
+
+      .quick-links-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .help-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .help-actions {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(94%, 1180px);
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-group {
+        justify-content: center;
+      }
+
+      .topbar-group span:first-child {
+        display: none;
+      }
+
+      .header-actions .btn-outline {
+        display: none;
+      }
+
+      .logo-copy small {
+        display: none;
+      }
+
+      .error-grid {
+        padding: 52px 0;
+        gap: 30px;
+      }
+
+      .orbit-box {
+        width: min(270px, 85vw);
+      }
+
+      .search-box {
+        grid-template-columns: 1fr;
+      }
+
+      .search-box button {
+        width: 100%;
+      }
+
+      .primary-actions {
+        display: grid;
+      }
+
+      .primary-actions .btn {
+        width: 100%;
+      }
+
+      .quick-links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-link {
+        min-height: 155px;
+      }
+
+      .help-box {
+        padding: 25px 20px;
+      }
+
+      .help-actions {
+        display: grid;
+      }
+
+      .help-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .logo-name {
+        font-size: 1.34rem;
+      }
+
+      .header-actions .btn-primary {
+        min-height: 42px;
+        padding: 9px 13px;
+        font-size: 0.85rem;
+      }
+
+      .error-number {
+        font-size: 6rem;
+      }
+
+      .floating-buttons {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .float-button {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-group">
+        <span>Education • Careers • Jobs • Training</span>
+        <span>📞 +91 9142102309</span>
+      </div>
+
+      <a href="https://medorbits.in">
+        🌐 medorbits.in
+      </a>
+
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+
+        <span class="logo-icon">M</span>
+
+        <span class="logo-copy">
+
+          <span class="logo-name">
+            Med<strong>Orbit</strong>
+          </span>
+
+          <small>Foundation</small>
+
+        </span>
+
+      </a>
+
+      <div class="header-actions">
+
+        <button
+          class="btn btn-outline"
+          id="backButton"
+          type="button"
+        >
+          ← Go Back
+        </button>
+
+        <a
+          class="btn btn-primary"
+          href="index.html"
+        >
+          Home
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="error-section">
+      <div class="container error-grid">
+
+        <div class="error-visual">
+
+          <div class="orbit-box">
+
+            <div class="orbit-ring"></div>
+
+            <div class="orbit-ring two"></div>
+
+            <div class="error-number">
+              4<span>0</span>4
+            </div>
+
+          </div>
+
+          <div class="visual-label">
+            Page outside the orbit
+          </div>
+
+        </div>
+
+        <div class="error-copy">
+
+          <span class="error-badge">
+            ⚠️ Page Not Found
+          </span>
+
+          <h1>
+            We could not find the page you requested.
+          </h1>
+
+          <p>
+            The link may be incorrect, the page may have moved, or the
+            content may not have been published yet. Use the search box
+            or choose a trusted page below.
+          </p>
+
+          <div
+            class="requested-path"
+            id="requestedPath"
+          >
+            <strong>Requested address:</strong>
+            Loading…
+          </div>
+
+          <form
+            class="search-box"
+            id="siteSearchForm"
+            role="search"
+          >
+
+            <input
+              type="search"
+              id="siteSearch"
+              placeholder="Search courses, colleges, jobs or admissions"
+              aria-label="Search MedOrbit Foundation"
+              autocomplete="off"
+              required
+            >
+
+            <button
+              type="submit"
+              class="btn btn-light"
+            >
+              Search
+            </button>
+
+          </form>
+
+          <div class="primary-actions">
+
+            <a
+              class="btn btn-light"
+              href="index.html"
+            >
+              🏠 Return Home
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="courses.html"
+            >
+              🎓 Browse Courses
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="jobs.html"
+            >
+              💼 Find Jobs
+            </a>
+
+          </div>
+
+          <p class="support-note">
+            No automatic redirect is used, so you remain in control and
+            can safely choose where to go.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="links-section">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Popular Pages</span>
+
+          <h2>
+            Continue Exploring MedOrbit Foundation
+          </h2>
+
+          <p>
+            Use these verified internal links to reach the main areas of
+            the website.
+          </p>
+
+        </div>
+
+        <div class="quick-links-grid">
+
+          <a
+            class="quick-link"
+            href="courses.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">🎓</span>
+
+              <h3>Courses</h3>
+
+              <p>
+                Explore medical, engineering, management, law,
+                technology and other programs.
+              </p>
+
+            </div>
+
+            <strong>Browse courses →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="colleges.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">🏫</span>
+
+              <h3>Colleges</h3>
+
+              <p>
+                Search government, private, deemed and international
+                institutions.
+              </p>
+
+            </div>
+
+            <strong>Find colleges →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="admission-guide.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">📘</span>
+
+              <h3>Admission Guide</h3>
+
+              <p>
+                Understand eligibility, documents, counselling and
+                application steps.
+              </p>
+
+            </div>
+
+            <strong>Read guide →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="jobs.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">💼</span>
+
+              <h3>Jobs</h3>
+
+              <p>
+                Explore opportunities for 10th pass, 12th pass,
+                graduates and professionals.
+              </p>
+
+            </div>
+
+            <strong>Explore jobs →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="study-abroad.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">🌍</span>
+
+              <h3>Study Abroad</h3>
+
+              <p>
+                Explore countries, universities, applications and visa
+                guidance.
+              </p>
+
+            </div>
+
+            <strong>View destinations →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="brochure.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">📚</span>
+
+              <h3>Brochures</h3>
+
+              <p>
+                Browse focused information for education, jobs,
+                training and admissions.
+              </p>
+
+            </div>
+
+            <strong>Open brochures →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="services.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">🤝</span>
+
+              <h3>Services</h3>
+
+              <p>
+                Learn about education, careers, recruitment, training
+                and consultancy support.
+              </p>
+
+            </div>
+
+            <strong>View services →</strong>
+
+          </a>
+
+          <a
+            class="quick-link"
+            href="contact.html"
+          >
+
+            <div>
+
+              <span class="quick-link-icon">📞</span>
+
+              <h3>Contact</h3>
+
+              <p>
+                Reach MedOrbit Foundation for guidance and support.
+              </p>
+
+            </div>
+
+            <strong>Contact us →</strong>
+
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="help-section">
+      <div class="container">
+
+        <div class="help-box">
+
+          <div class="help-copy">
+
+            <h2>
+              Still unable to find the information?
+            </h2>
+
+            <p>
+              Share the page or service you were trying to access. Our
+              team can direct you to the correct section.
+            </p>
+
+            <div class="status-box">
+
+              <span class="status-icon">✓</span>
+
+              <div>
+                <strong>Safe navigation:</strong>
+                All buttons on this page direct visitors to MedOrbit
+                Foundation pages, phone support or WhatsApp support.
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="help-actions">
+
+            <a
+              class="btn btn-secondary"
+              href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20reached%20a%20404%20page%20and%20need%20help%20finding%20the%20correct%20information."
+            >
+              💬 WhatsApp Support
+            </a>
+
+            <a
+              class="btn btn-primary"
+              href="tel:+919142102309"
+            >
+              ☎ Call Support
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>MedOrbit Foundation</h3>
+
+          <p>
+            Education, admissions, jobs, career counselling, training
+            and study abroad guidance.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>Support</h3>
+
+          <div class="footer-links">
+
+            <a href="tel:+919142102309">
+              +91 9142102309
+            </a>
+
+            <a href="https://wa.me/919142102309">
+              WhatsApp
+            </a>
+
+            <a href="https://medorbits.in">
+              medorbits.in
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> MedOrbit Foundation.
+          All rights reserved.
+        </span>
+
+        <span>
+          Error reference: 404 – Requested page unavailable.
+        </span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+
+    <a
+      class="float-button whatsapp"
+      href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20help%20finding%20a%20page."
+      aria-label="Contact MedOrbit Foundation on WhatsApp"
+    >
+      💬
+    </a>
+
+    <a
+      class="float-button call"
+      href="tel:+919142102309"
+      aria-label="Call MedOrbit Foundation"
+    >
+      ☎
+    </a>
+
+  </div>
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <script>
+    const requestedPath =
+      document.getElementById("requestedPath");
+
+    const siteSearchForm =
+      document.getElementById("siteSearchForm");
+
+    const siteSearch =
+      document.getElementById("siteSearch");
+
+    const backButton =
+      document.getElementById("backButton");
+
+    const toast =
+      document.getElementById("toast");
+
+    const pageMap = [
+      {
+        keywords: [
+          "home",
+          "main",
+          "medorbit"
+        ],
+        url: "index.html"
+      },
+      {
+        keywords: [
+          "about",
+          "foundation",
+          "mission",
+          "vision"
+        ],
+        url: "about.html"
+      },
+      {
+        keywords: [
+          "service",
+          "consultancy",
+          "guidance"
+        ],
+        url: "services.html"
+      },
+      {
+        keywords: [
+          "course",
+          "mbbs",
+          "bds",
+          "nursing",
+          "pharmacy",
+          "engineering",
+          "mba",
+          "btech",
+          "bca",
+          "law"
+        ],
+        url: "courses.html"
+      },
+      {
+        keywords: [
+          "college",
+          "university",
+          "institution",
+          "campus"
+        ],
+        url: "colleges.html"
+      },
+      {
+        keywords: [
+          "admission",
+          "counselling",
+          "document",
+          "application",
+          "eligibility"
+        ],
+        url: "admission-guide.html"
+      },
+      {
+        keywords: [
+          "job",
+          "vacancy",
+          "career",
+          "airline",
+          "airport",
+          "healthcare",
+          "private job",
+          "government job"
+        ],
+        url: "jobs.html"
+      },
+      {
+        keywords: [
+          "abroad",
+          "russia",
+          "nepal",
+          "georgia",
+          "kazakhstan",
+          "uzbekistan",
+          "kyrgyzstan"
+        ],
+        url: "study-abroad.html"
+      },
+      {
+        keywords: [
+          "brochure",
+          "prospectus",
+          "pdf"
+        ],
+        url: "brochure.html"
+      },
+      {
+        keywords: [
+          "fee",
+          "fees",
+          "cost",
+          "structure"
+        ],
+        url: "fee-structure.html"
+      },
+      {
+        keywords: [
+          "training",
+          "skill",
+          "workshop",
+          "interview"
+        ],
+        url: "training.html"
+      },
+      {
+        keywords: [
+          "scholarship",
+          "financial aid"
+        ],
+        url: "scholarships.html"
+      },
+      {
+        keywords: [
+          "contact",
+          "phone",
+          "whatsapp",
+          "address",
+          "help"
+        ],
+        url: "contact.html"
+      }
+    ];
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      window.setTimeout(function () {
+        toast.classList.remove("show");
+      }, 2800);
+    }
+
+    requestedPath.innerHTML =
+      "<strong>Requested address:</strong> " +
+      window.location.pathname;
+
+    backButton.addEventListener("click", function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = "index.html";
+      }
+    });
+
+    siteSearchForm.addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
+
+        const query =
+          siteSearch.value
+            .toLowerCase()
+            .trim();
+
+        if (!query) {
+          showToast("Enter a course, college, job or service.");
+          return;
+        }
+
+        const match =
+          pageMap.find(function (page) {
+            return page.keywords.some(function (keyword) {
+              return (
+                query.includes(keyword) ||
+                keyword.includes(query)
+              );
+            });
+          });
+
+        if (match) {
+          window.location.href = match.url;
+        } else {
+          const whatsappMessage =
+            "Hello MedOrbit Foundation, I could not find information about: " +
+            siteSearch.value.trim();
+
+          const supportURL =
+            "https://wa.me/919142102309?text=" +
+            encodeURIComponent(whatsappMessage);
+
+          showToast(
+            "No direct page found. Opening support shortly."
+          );
+
+          window.setTimeout(function () {
+            window.open(
+              supportURL,
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }, 900);
+        }
+      }
+    );
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
