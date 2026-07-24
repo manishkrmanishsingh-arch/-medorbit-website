@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://medorbits.in/jobs.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Healthcare -->
+    <url>
+        <loc>https://medorbits.in/jobs/medical.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://medorbits.in/jobs/nursing.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://medorbits.in/jobs/pharmacy.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Aviation -->
+    <url>
+        <loc>https://medorbits.in/jobs/aviation.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://medorbits.in/jobs/cabin-crew.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://medorbits.in/jobs/ground-staff.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Education -->
+    <url>
+        <loc>https://medorbits.in/jobs/education.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- IT -->
+    <url>
+        <loc>https://medorbits.in/jobs/information-technology.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Engineering -->
+    <url>
+        <loc>https://medorbits.in/jobs/engineering.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Banking -->
+    <url>
+        <loc>https://medorbits.in/jobs/banking.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Government -->
+    <url>
+        <loc>https://medorbits.in/jobs/government.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <!-- Hospitality -->
+    <url>
+        <loc>https://medorbits.in/jobs/hospitality.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Sales & Marketing -->
+    <url>
+        <loc>https://medorbits.in/jobs/sales-marketing.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Customer Support -->
+    <url>
+        <loc>https://medorbits.in/jobs/customer-support.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Finance -->
+    <url>
+        <loc>https://medorbits.in/jobs/finance.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- HR -->
+    <url>
+        <loc>https://medorbits.in/jobs/human-resources.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Administration -->
+    <url>
+        <loc>https://medorbits.in/jobs/administration.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Work From Home -->
+    <url>
+        <loc>https://medorbits.in/jobs/work-from-home.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Internships -->
+    <url>
+        <loc>https://medorbits.in/jobs/internships.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Freshers -->
+    <url>
+        <loc>https://medorbits.in/jobs/freshers.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Experienced -->
+    <url>
+        <loc>https://medorbits.in/jobs/experienced.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+</urlset>
