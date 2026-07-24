@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Countries Main Page -->
+    <url>
+        <loc>https://medorbits.in/countries/</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <!-- India -->
+    <url>
+        <loc>https://medorbits.in/countries/india.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Nepal -->
+    <url>
+        <loc>https://medorbits.in/countries/nepal.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Russia -->
+    <url>
+        <loc>https://medorbits.in/countries/russia.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Georgia -->
+    <url>
+        <loc>https://medorbits.in/countries/georgia.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <!-- Kazakhstan -->
+    <url>
+        <loc>https://medorbits.in/countries/kazakhstan.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Uzbekistan -->
+    <url>
+        <loc>https://medorbits.in/countries/uzbekistan.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Kyrgyzstan -->
+    <url>
+        <loc>https://medorbits.in/countries/kyrgyzstan.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Bangladesh -->
+    <url>
+        <loc>https://medorbits.in/countries/bangladesh.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Philippines -->
+    <url>
+        <loc>https://medorbits.in/countries/philippines.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Armenia -->
+    <url>
+        <loc>https://medorbits.in/countries/armenia.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Belarus -->
+    <url>
+        <loc>https://medorbits.in/countries/belarus.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Egypt -->
+    <url>
+        <loc>https://medorbits.in/countries/egypt.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- China -->
+    <url>
+        <loc>https://medorbits.in/countries/china.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Poland -->
+    <url>
+        <loc>https://medorbits.in/countries/poland.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Germany -->
+    <url>
+        <loc>https://medorbits.in/countries/germany.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- USA -->
+    <url>
+        <loc>https://medorbits.in/countries/usa.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- UK -->
+    <url>
+        <loc>https://medorbits.in/countries/uk.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Canada -->
+    <url>
+        <loc>https://medorbits.in/countries/canada.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Australia -->
+    <url>
+        <loc>https://medorbits.in/countries/australia.html</loc>
+        <lastmod>2026-07-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+</urlset>
